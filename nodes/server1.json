@@ -10,6 +10,19 @@
     ]
   },
   "default": {
+    "nginx": {
+      "site_domain": "my_chef_nginx.com",
+      "root": "/var/www/my_chef_nginx.com/"
+    },
+    "mysql": {
+      "user": "vagrant",
+      "group": "vagrant",
+      "server_root_password": "kani19921",
+      "default_character_set": "utf8",
+      "character_set_server": "utf8",
+      "collation_server": "utf8_general_ci",
+      "init_connect": "SET NAMES utf8"
+    },
     "server": {
       "api_ipaddress": "XXX.XXXX.XXX.XXX",
       "mysql_master_ipaddress": "XXX.XXX.XXX.XXX",
@@ -22,10 +35,15 @@
     "hostname": "vagrant-ubuntu-trusty-64",
     "ipaddress": "10.0.2.15",
     "roles": [
-
+      "linux-servers"
     ],
     "recipes": [
-
+      "iptables",
+      "iptables::default",
+      "nginx",
+      "nginx::default",
+      "mysql",
+      "mysql::default"
     ],
     "platform": "ubuntu",
     "platform_version": "14.04",
