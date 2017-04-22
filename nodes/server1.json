@@ -43,5 +43,8 @@
         "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib"
       }
     }
-  }
+  },
+  "run_list": [
+    "role[linux-servers]"
+  ]
 }
