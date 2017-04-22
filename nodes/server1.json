@@ -1,0 +1,48 @@
+{
+  "name": "server1",
+  "chef_environment": "development",
+  "normal": {
+    "knife_zero": {
+      "host": "192.168.33.99"
+    },
+    "tags": [
+
+    ]
+  },
+  "default": {
+    "server": {
+      "api_ipaddress": "XXX.XXXX.XXX.XXX",
+      "mysql_master_ipaddress": "XXX.XXX.XXX.XXX",
+      "mysql_slave_ipaddress": "XXX.XXX.XXX.XXX"
+    }
+  },
+  "automatic": {
+    "fqdn": "vagrant-ubuntu-trusty-64",
+    "os": "linux",
+    "os_version": "3.13.0-77-generic",
+    "hostname": "vagrant-ubuntu-trusty-64",
+    "ipaddress": "10.0.2.15",
+    "roles": [
+
+    ],
+    "recipes": [
+
+    ],
+    "platform": "ubuntu",
+    "platform_version": "14.04",
+    "cloud_v2": null,
+    "ec2": {
+
+    },
+    "chef_packages": {
+      "ohai": {
+        "version": "8.23.0",
+        "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.3.0/gems/ohai-8.23.0/lib/ohai"
+      },
+      "chef": {
+        "version": "12.19.36",
+        "chef_root": "/opt/chef/embedded/lib/ruby/gems/2.3.0/gems/chef-12.19.36/lib"
+      }
+    }
+  }
+}
