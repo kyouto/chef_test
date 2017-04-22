@@ -1,0 +1,14 @@
+{
+  "name": "development",
+  "description":"variables depends on environment",
+  "chef_type": "environment",
+  "json_class": "Chef::Environment",
+  "default_attributes": {
+    "server": {
+      "api_ipaddress": "XXX.XXXX.XXX.XXX"
+      ,"mysql_master_ipaddress": "XXX.XXX.XXX.XXX"
+      ,"mysql_slave_ipaddress": "XXX.XXX.XXX.XXX"
+    }
+  },
+  "override_attributes": {}
+}
