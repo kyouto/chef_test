@@ -19,7 +19,6 @@
   "automatic": {
     "fqdn": "vagrant-ubuntu-trusty-64",
     "os": "linux",
-    "os_version": "3.13.0-77-generic",
     "hostname": "vagrant-ubuntu-trusty-64",
     "ipaddress": "10.0.2.15",
     "roles": [
