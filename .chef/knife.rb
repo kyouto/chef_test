@@ -12,7 +12,6 @@ knife[:use_sudo] = true
 knife[:automatic_attribute_whitelist] = [
   "fqdn/",
   "os/",
-  "os_version/",
   "hostname",
   "ipaddress/",
   "roles/",
